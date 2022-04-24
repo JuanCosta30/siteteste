@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/microchip-solid.svg" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <title>Cursos</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap');
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           text-decoration: none;
+       } 
+       body{
+            background-color: rgb(230, 230, 230);
+            
+        }
+        main{
+            margin-top: 10px;
+        }
+        header.cabecalho{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            font-family: 'Fredoka', sans-serif;
+           
+        }
+        header.cabecalho > h1{
+            margin-top: 40px;
+            font-size: 3em;
+            font-weight: 600;
+        }
+        header.cabecalho > h1 >a{
+            color: black;
+        }
+        nav.cabecalho-menu > #pesquisa{
+            background-color: #f0f0f0;
+            border: 1px solid  #dddddd;
+            border-radius: 25px;
+            height: 40px;
+            margin-right: 30px;
+            padding-left: 30px;
+            padding-right:10px ;
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 300;
+            font-size: 1.2em;
+           
+        }
+        nav.cabecalho-menu{
+            margin-top: 40px;
+        }
+        nav.cabecalho-menu > a.menu{
+            color: rgb(82, 82, 82);
+            font-weight: 600;
+            margin-right: 40px;
+            padding: 10px;
+            transition: all 0.1s;
+
+        }
+        nav.cabecalho-menu > a.menu:hover{
+            transition: all 0.4s;
+            background-color: #564fe0;
+            border-radius: 25px;
+            color: white ;  
+
+        }
+        button.login{
+            background-color: #564fe0;
+            border-radius: 25px;
+            border:none;
+            padding: 10px 60px 10px ;
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 600;
+            font-size: 1em;
+            color:white; 
+            transition: all 0.1s ease-in-out;
+        }
+        button.login:hover{
+            background-color: #6C63FF;
+            transition: all 0.4s ease-in-out;
+            transform: scale(1.1);
+        }
+        button.login > a{
+            color: white;
+        }
+        section.cursos{
+          display: flex;
+          flex-direction:row;
+          justify-content: space-evenly;
+          min-width: 350px;
+        }
+        section.card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        div.display{
+           display: flex;
+           flex-direction:column;
+           align-items: center;
+           justify-content:center;
+           background-color:rgb(240, 240, 240);
+           width: 250px;
+           height: 270px;   
+           border-radius: 50px; 
+           text-align:center;
+           transition: all 0.2s ease-in-out;
+           border: 1px solid  #dddddd;
+           margin-top: 40px;
+        } 
+        
+       
+       /*
+        div.display:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            background-color: white;
+            transition: all 0.4s ease-in-out;}
+            */
+            
+        div.display > h4{
+            border: 2px solid #6C63FF;
+            width: 100px;
+            margin-bottom:5px;
+            padding: 5px;
+            border-radius:20px;
+            color: #6C63FF;
+            font-family: 'Fredoka', sans-serif;
+            font-weight:600;
+        }
+     
+        div.display > img{
+            height: 160px;
+            padding: 15px;
+        }
+
+        div.display > span{
+            border-radius: 50px;
+            color: rgb(107, 107, 107);
+            font-family: 'Fredoka', sans-serif;
+            font-weight:300;
+            font-size: 0.8em;
+        }
+
+        button.botao{
+            background-color:#6C63FF ;
+            border: none;
+            border-radius: 50px;
+            margin-top: 10px;
+            width: 150px;
+            padding: 8px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.2em;
+            font-weight:600;
+            color: white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+            transition: all 0.2s ease-in-out;
+        }
+        button.botao:hover{
+            background-color:#564fe0 ;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 0.4s ease-in-out;
+        }
+        footer{
+            background-color:#6C63FF ;
+            height: 150px;
+            text-align: center;
+            padding-top: 70px;
+            margin-top: 90px;
+            color: white;
+            font-family: 'Fredoka', sans-serif;
+            font-weight:300;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1><a href="index.html">CURSOS WB</a></h1>
+        <nav class="cabecalho-menu">
+            <input size="30px" type="search" name="pesquisa" id="pesquisa" placeholder="Pesquise...">
+            <a class="menu" href="cursogratis.html">Cursos Grátis</a>
+            <a class="menu" href="cursopago.html">Cursos Pagos</a>
+            <a class="menu" href="contato.html">Contato</a>
+            <a class="menu" href="#">Blog</a>
+           <button class="login"><a href="#">Login</a></button>
+        </nav>
+    </header>
+    <main>
+        <section class="cursos">
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_dev_productivity_re_fylf.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+        
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_group_hangout_re_4t8r.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_static_website_re_x70h.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_date_picker_re_r0p8.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_things_to_say_re_jpcg.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+        
+        </section>
+        <section class="cursos">
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_smartwatch_re_59lx.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_mobile_development_re_wwsn.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_profile_details_re_ch9r.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_real_time_analytics_re_yliv.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+            <section class="card">
+                <div class="display">
+                    <h4>Curso</h4>
+                    <span>Gratuito</span>
+                    <img src="../Display/imagens/undraw_going_up_re_86kg.svg" alt="">
+                </div>
+                <button class="botao">Se Inscreva!</button>
+            </section>
+        
+        </section>
+    </main>
+<footer>
+    <p>&copy; CursosWb 2022</p>
+</footer>
+</body>
+</html>
